@@ -1,0 +1,107 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center py-5">
+        <h1 class="display-3 text-white mb-4 animated slideInDown">Crop Recommendation</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Top Feature Start -->
+<div class="container-fluid top-feature py-5 pt-lg-0">
+    <div class="container py-5 pt-lg-0">
+        <div class="row gx-0">
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                            <i class="fa fa-times text-primary"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h4>Food Security</h4>
+                            <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                            <i class="fa fa-users text-primary"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h4>Healthy Foods</h4>
+                            <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                            <i class="fa fa-phone text-primary"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h4>Sustainable</h4>
+                            <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Top Feature End -->
+
+
+<!-- Crop Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
+                hffghhfghfghfghfghfghfg
+        </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <p class="mb-4">Welcome to our Crop Recommendation feature, where science meets agriculture. Using cutting-edge Machine Learning technology, we analyze your location, soil composition, and local climate to provide tailored crop recommendations. Discover the crops that thrive in your unique conditions, and make data-backed decisions for a bountiful harvest. Farm smarter, not harder, with our precision recommendations.</p>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <label for="customRange3" class="form-label">Nitrogen : <label id="rangeValue1"> 0 </label></label>
+                            <input type="range" class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue1.innerText = this.value">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="customRange3" class="form-label">Phosporus : <label id="rangeValue2"> 0 </label></label>
+                            <input type="range" class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue2.innerText = this.value">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="customRange3" class="form-label">Potassium : <label id="rangeValue3"> 0 </label></label>
+                            <input type="range" class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue3.innerText = this.value">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="customRange3" class="form-label">Average Temperature : <label id="rangeValue4"> 0 </label></label>
+                            <input type="range" class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue4.innerText = this.value">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="customRange3" class="form-label">Average Humidity in % : <label id="rangeValue5"> 0 </label></label>
+                            <input type="range" class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue5.innerText = this.value">
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary py-3 px-4" type="submit">Predict</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Crop End -->
+
+</html>
+
+{%endblock%}
