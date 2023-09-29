@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>{{ title }}</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Agro Harvest Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+	<link href="img/favicon.ico" rel="icon">
+
+	<!-- Google Web Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+
+	<!-- Icon Font Stylesheet -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+	<!-- Libraries Stylesheet -->
+	<link href="lib/animate/animate.min.css" rel="stylesheet">
+	<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+	<!-- css files -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- bootstrap css -->
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel='stylesheet' type='text/css' />
+	<!-- custom css -->
+	<!-- //css files -->
+
+
+	<script type="text/JavaScript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <div>
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">Back<i class = "fa fa-arrow-left ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Crop Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
+                    hffghhfghfghfghfghfghfg
+            </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <p class="mb-4">Welcome to our Crop Recommendation feature, where science meets agriculture. Using cutting-edge Machine Learning technology, we analyze your location, soil composition, and local climate to provide tailored crop recommendations. Discover the crops that thrive in your unique conditions, and make data-backed decisions for a bountiful harvest. Farm smarter, not harder, with our precision recommendations.</p>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <label for="customRange3" class="form-label">Nitrogen : <label id="rangeValue1"> 0 </label></label>
+                                <input type="range" class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue1.innerText = this.value">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="customRange3" class="form-label">Phosporus : <label id="rangeValue2"> 0 </label></label>
+                                <input type="range" class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue2.innerText = this.value">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="customRange3" class="form-label">Potassium : <label id="rangeValue3"> 0 </label></label>
+                                <input type="range" class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue3.innerText = this.value">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="customRange3" class="form-label">Average Temperature : <label id="rangeValue4"> 0 </label></label>
+                                <input type="range" class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue4.innerText = this.value">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="customRange3" class="form-label">Average Humidity in % : <label id="rangeValue5"> 0 </label></label>
+                                <input type="range" class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue5.innerText = this.value">
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-4" type="submit">Predict</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Crop End -->
+</body>
+</html>
+
