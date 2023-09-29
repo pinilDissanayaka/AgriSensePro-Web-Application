@@ -17,10 +17,13 @@ def home():
 def crop_rec():
     return render_template('crop_rec.html')
 
-@app.route('/login.html')
-def login():
-    return render_template('login.html', title = 'Login')
+@app.route('/signin.html')
+def signin():
+    return render_template('signin.html', title = 'signin')
 
+@app.route('/signup.html')
+def signup():
+    return render_template('/signup.html', title = "signup")
 
 
 if __name__ == '__main__':
